@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Display from './Display';
 
 export default function App() {
+    const [state, setState] = useState('Home');
+
     return (
-        <p>App comming soon!</p>
+        <Display
+            state={state}
+            setState={setState}
+        />
     )
 }
