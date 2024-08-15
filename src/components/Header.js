@@ -9,6 +9,8 @@ export default function Header(props) {
         "Contact Us", 
         "Support",
     ]
+
+    console.log('Header loading');
     
     return (
         <div className='Header'>
