@@ -87,3 +87,22 @@ nav {
   width: 100%;
   height: 740px;
 }
+
+/* Media Queries - these are responsible for page responsiveness */
+/* Don't worry about these for now */
+
+@media (min-width: 598px){
+
+}
+
+@media (min-width: 768px){
+
+}
+
+@media (min-width: 992px){
+
+}
+
+@media (min-width: 1200px){
+
+}
