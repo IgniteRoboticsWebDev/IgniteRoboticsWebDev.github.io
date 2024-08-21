@@ -1,12 +1,15 @@
-* {
-    box-sizing: border-box;
-  }
+/* Test, Josephine */
 
-html, body {
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
   margin: 0;
   padding: 0;
-  font-family: 'roboto', sans-serif;
-  background-color: #F8F5F4;
+  font-family: "roboto", sans-serif;
+  background-color: #f8f5f4;
 }
 
 h1 {
@@ -15,7 +18,7 @@ h1 {
   font-weight: bold;
 }
 
-h2 { 
+h2 {
   font-size: 18px;
   color: black;
   font-weight: bold;
@@ -23,7 +26,7 @@ h2 {
 
 p {
   font-size: 18px;
-  color: #6B6B6B;
+  color: #6b6b6b;
 }
 
 /* Nav Bar */
@@ -43,9 +46,10 @@ nav {
   position: fixed; /* Fix the position */
   top: 16px; /* Position it 64px from the top of the screen */
   left: 50%; /* Center the nav bar horizontally */
-  transform: translateX(-50%); /* Adjust the position to account for its width */
+  transform: translateX(
+    -50%
+  ); /* Adjust the position to account for its width */
   z-index: 1000; /* Ensure it's on top of other elements */
-
 }
 
 .nav-logo {
@@ -53,7 +57,7 @@ nav {
   width: 140px;
 }
 
-.nav-links{
+.nav-links {
   display: flex;
   height: 34px;
   justify-content: center;
@@ -62,7 +66,7 @@ nav {
   list-style: none;
 }
 
-.nav-links > li > a{
+.nav-links > li > a {
   text-decoration: none;
   text-align: center;
   font-size: 16px;
@@ -78,7 +82,7 @@ nav {
   align-items: center;
   border-radius: 8px;
   color: white;
-  background: #CF1D2D;
+  background: #cf1d2d;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -91,18 +95,14 @@ nav {
 /* Media Queries - these are responsible for page responsiveness */
 /* Don't worry about these for now */
 
-@media (min-width: 598px){
-
+@media (min-width: 598px) {
 }
 
-@media (min-width: 768px){
-
+@media (min-width: 768px) {
 }
 
-@media (min-width: 992px){
-
+@media (min-width: 992px) {
 }
 
-@media (min-width: 1200px){
-
+@media (min-width: 1200px) {
 }
