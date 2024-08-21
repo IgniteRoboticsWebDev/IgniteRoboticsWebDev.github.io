@@ -1,9 +1,16 @@
+<<<<<<< HEAD
 /* Test, Josephine */
 
 * {
   box-sizing: border-box;
 }
 
+=======
+* {
+  box-sizing: border-box;
+}
+
+>>>>>>> web2
 html,
 body {
   margin: 0;
