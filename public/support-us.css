@@ -1,0 +1,82 @@
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title-content {
+  display: flex;
+  justify-content: space-between;
+  width: 1126px;
+  position: relative;
+  margin-top: 220px;
+  margin-bottom: 104px;
+}
+
+.support-us-title {
+  font-size: 80px;
+  width: 636px;
+  line-height: 125%;
+  margin: 0;
+}
+
+.support-us-title-msg {
+  font-size: 16px;
+  width: 366px;
+  margin: 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  text-align: right;
+  line-height: 125%;
+}
+
+.northwest-photo {
+  padding-bottom: 104px;
+}
+
+.how-to-get-involved {
+  background-color: white;
+  width: 1126px;
+  border-radius: 24px;
+  padding: 64px 75px;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 104px;
+}
+
+.involved-text {
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+.support-grid {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-gap: 64px;
+  row-gap: 64px;
+}
+
+.donate-button,
+.volunteer-button,
+.sponsorship-button {
+  width: 200px;
+  height: 36px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  background-color: #CF1D2D;
+  margin-top: 16px;
+  cursor: pointer;
+}
+
+.support-method-text {
+  line-height: 150%;
+  letter-spacing: -0.019em; /* -1.9% */
+  margin-bottom: 0px;
+}
+
+.page-bottom {
+  height: 300px;
+  width: 100%;
+  background-color: #6B6B6B;
+}
