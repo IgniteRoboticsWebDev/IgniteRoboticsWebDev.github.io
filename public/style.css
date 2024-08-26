@@ -88,6 +88,48 @@ nav {
   height: 740px;
 }
 
+/* Why Ignite Robotics Landing Page*/
+.ignite-container {
+  width: 80%;
+  max-width: 1440px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  margin: 20px auto; /* Centers the box */
+  box-sizing: border-box;
+}
+
+.ignite-title {
+  text-align: left;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.ignite-content {
+  display: flex;
+  flex-direction: row;
+  gap: 128px;
+}
+
+.ignite-section {
+  flex: 1;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.ignite-section-title {
+  font-size: 19px;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.ignite-section-text {
+  margin: 0;
+}
+
 /* Media Queries - these are responsible for page responsiveness */
 /* Don't worry about these for now */
 
