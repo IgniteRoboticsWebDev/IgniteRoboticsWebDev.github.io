@@ -151,7 +151,8 @@ footer {
   width: 100%;
   height: calc(100vw / 3.5);
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
+  padding-bottom: 128px;
   z-index: 2;
 }
 
@@ -161,23 +162,22 @@ footer {
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
-  gap: var(--margin-margin-sm, 20px);
 }
 
 
 .header-text {
-  color: white;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 100%;
+  margin: 0;
 }
 
-#page-desc {
-  margin-top: 20px;
+.page-desc {
+  margin-top: 32px;
   color: #fff;
-  font-family: Roboto;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 125%; /* 22.5px */
-  letter-spacing: -0.198px;
 }
 
 #introduction {
