@@ -7,30 +7,46 @@ body {
   margin: 0;
   padding: 0;
   font-family: "roboto", sans-serif;
-  background-color: #f8f5f4;
+  background-color: #f5f5f5;
 }
 
 h1 {
-  font-size: 36px;
-  color: black;
-  font-weight: bold;
+  color: #fff;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 900;
+  margin-bottom: 0;
+  line-height: 150%;
 }
 
 h2 {
+  color: #000;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  margin: 0;
+}
+
+h3 {
+  color: #000;
   font-size: 18px;
-  color: black;
-  font-weight: bold;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  margin: 0;
 }
 
 p {
   font-size: 18px;
   color: #6b6b6b;
+  margin: 0;
 }
 
 /* Nav Bar */
 
 nav {
-  max-width: 1200px;
+  max-width: 1126px;
   width: 100%;
   max-height: 80px;
   padding: 16px 32px;
@@ -84,10 +100,204 @@ nav {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-/* Landing Page */
-.landing-photo {
+/* Footer */
+footer {
+  display: flex;
   width: 100%;
-  height: 740px;
+  padding: 64px 128px;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: white;
+}
+
+.footer-logo {
+  max-width: 300px;
+  max-height: 90px;
+}
+
+.footer-info {
+  width: 720px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.footer-address {
+  width: 190px;
+}
+
+.footer-section a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Summer Courses */
+
+.banner {
+  width: 100%;
+  height: calc(100vw / 3.5);
+  object-fit: cover;
+  z-index: 1;
+  align-self: stretch;
+  background: lightgray -0.396px -378.58px / 100%
+    215.898% no-repeat;
+}
+
+#center-header-div {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100vw / 3.5);
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 128px;
+  z-index: 2;
+}
+
+#header-text-div {
+  display: flex;
+  width: 1126px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+
+.header-text {
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 100%;
+  margin: 0;
+}
+
+.page-desc {
+  margin-top: 32px;
+  color: #fff;
+}
+
+#introduction {
+  width: 1126px;
+  padding: 64px 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 32px;
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-top: 128px;
+}
+
+#intro-desc {
+  margin-top: 0;
+  padding: 0;
+  color: #6b6b6b;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+  letter-spacing: -0.342px;
+}
+
+.centered-section {
+  display: flex;
+  width: 100vw;
+  /* width: 1440px; */
+  flex-direction: column;
+  align-items: center;
+  gap: 128px;
+}
+
+#course-gallery {
+  /* display: flex;
+  width: 1440px;
+  flex-direction: column;
+  align-items: center;
+  gap: 128px; */
+  display: inline-flex;
+  height: 610.886px;
+  align-items: flex-start;
+  gap: 38px;
+  flex-shrink: 0;
+  margin-top: 32px;
+}
+
+.course {
+  display: flex;
+  width: 300px;
+  height: 610.886px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 21px;
+}
+
+.course-info {
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  flex-shrink: 0;
+  align-self: stretch;
+}
+
+.course-img {
+  display: flex;
+  height: 300px;
+  /* padding: 0px var(--column-column-lg, 12px); */
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  align-self: stretch;
+  border-radius: 7.692px;
+  background: lightgray 50% / cover no-repeat;
+  box-shadow: 0px 1.282px 2.564px 0px rgba(0, 0, 0, 0.25);
+  object-fit: cover;
+}
+
+.course-name {
+  align-self: stretch;
+  margin: 0;
+}
+
+.course-desc {
+  align-self: stretch;
+  margin: 0;
+}
+
+.course-enroll {
+  display: flex;
+  width: 200px;
+  height: 36px;
+  padding: 14px 38px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+  letter-spacing: -0.342px;
+  background: #cf1d2d;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+#courses {
+  margin-bottom: 146px;
 }
 
 /* Media Queries - these are responsible for page responsiveness */
