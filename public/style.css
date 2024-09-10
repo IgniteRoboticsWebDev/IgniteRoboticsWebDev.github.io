@@ -86,7 +86,7 @@ nav {
 .nav-links > li > a {
   text-decoration: none;
   text-align: center;
-  font-size: 16px;
+  font-size: 1.4rem;
   color: black;
 }
 
@@ -186,17 +186,12 @@ footer {
 
 
 .header-text {
-  color: #FFF;
-  font-family: Roboto;
-  font-size: 80px;
-  font-style: normal;
-  font-weight: 900;
   line-height: 100%;
   margin: 0;
 }
 
 .page-desc {
-  margin-top: 32px;
+  margin-top: 16px;
   color: #fff;
 }
 
@@ -219,7 +214,7 @@ footer {
   padding: 0;
   color: #6b6b6b;
   font-family: Roboto;
-  font-size: 18px;
+  font-size: 1.8;
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 27px */
@@ -236,17 +231,16 @@ footer {
 }
 
 #course-gallery {
-  /* display: flex;
-  width: 1440px;
-  flex-direction: column;
-  align-items: center;
-  gap: 128px; */
   display: inline-flex;
   height: 610.886px;
   align-items: flex-start;
   gap: 38px;
   flex-shrink: 0;
   margin-top: 32px;
+}
+
+#course-gallery button p {
+  color: white;
 }
 
 .course {
