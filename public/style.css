@@ -575,7 +575,7 @@ footer {
   background-color: white;
   border-radius: 24px;
   margin-top: 112px;
-  gap: 128px;
+  gap: 64px;
 }
 
 .contact-form, .more-contacts-div{
@@ -650,6 +650,7 @@ input::placeholder, textarea::placeholder {
 
 .phonenumber {
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .social-links-div {
@@ -718,6 +719,10 @@ input::placeholder, textarea::placeholder {
     max-width: 300px;
   }
 
+  .outer-achievements-div {
+    padding: 64px 32px;
+  }
+
   .outer-goals-div, .inner-goals-div {
     max-width: 976px;
   }
@@ -729,10 +734,8 @@ input::placeholder, textarea::placeholder {
   /* contact */
   .contact-div {
     flex-direction: row;
-  }
-
-  .outer-achievements-div {
-    padding: 64px 32px;
+    max-width: 960px;
+    justify-content: space-between;
   }
 
   /* footer */
