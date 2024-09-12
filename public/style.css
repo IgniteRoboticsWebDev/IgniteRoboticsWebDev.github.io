@@ -2,13 +2,12 @@
   box-sizing: border-box;
 }
 
-html,
-body {
+html, body {
   margin: 0;
   padding: 0;
   font-family: "roboto", sans-serif;
   background-color: #f5f5f5;
-  font-size: 62.5%;
+  font-size: 50%;
 }
 
 h1 {
@@ -47,26 +46,25 @@ p {
 }
 
 /* Nav Bar */
-
 nav {
-  max-width: 1126px;
-  width: 100%;
-  max-height: 80px;
+  width: 100vw;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+  position: fixed;
+  z-index: 1000;
+  background-color: white;
+}
+
+nav > div {
+  width: 1126px;
+  height: auto;
   padding: 16px 32px;
   display: flex;
   align-items: center;
-  background-color: white;
   justify-content: space-between;
-  border-radius: 16px;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
-
-  position: fixed; /* Fix the position */
-  top: 16px;
-  left: 50%; /* Center the nav bar horizontally */
-  transform: translateX(
-    -50%
-  ); /* Adjust the position to account for its width */
-  z-index: 1000; /* Ensure it's on top of other elements */
 }
 
 .nav-logo {
@@ -75,11 +73,11 @@ nav {
 }
 
 .nav-links {
-  display: flex;
+  display: none;
   height: 34px;
   justify-content: center;
   align-items: center;
-  gap: var(--margin-margin-md, 32px);
+  gap: 24px;
   list-style: none;
 }
 
@@ -90,7 +88,8 @@ nav {
   color: black;
 }
 
-.nav-links li:last-child a {
+.login-button {
+  text-decoration: none;
   display: flex;
   width: 100px;
   height: 36px;
@@ -98,7 +97,7 @@ nav {
   justify-content: center;
   align-items: center;
   border-radius: 8px;
-  color: white;
+  color: white !important;
   background: #cf1d2d;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
 }
@@ -107,14 +106,73 @@ nav {
   filter: brightness(90%);
 }
 
+/* Hamburger menu */
+#hamburger-menu {
+  cursor: pointer;
+  display: block; /* Ensure it shows up on mobile */
+}
+
+/* Popup menu (initially hidden) */
+.popup-menu {
+  display: none; /* Initially hidden */
+  position: fixed;
+  top: 80px;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 999;
+  transition: all 0.3s ease-in-out; /* Add a transition effect */
+}
+
+.popup-menu.active {
+  display: block; /* Show the popup when active */
+  right: 0;
+  top: 80px; /* Ensure correct positioning */
+}
+
+.popup-nav-links {
+  list-style: none;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.popup-nav-links > li > a {
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 12px;
+  color: black;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.popup-nav-links > li > a:hover {
+  color: #cf1d2d; /* Add a hover effect for the links */
+}
+
+/* Close button for the popup (optional for improved UX) */
+.popup-menu-close {
+  position: absolute;
+  top: 20px;
+  right:
+}
+
 /* Footer */
 footer {
-  display: flex;
-  width: 100%;
-  padding: 64px 128px;
-  justify-content: space-between;
-  align-items: flex-start;
+  width: 100vw;
   background-color: white;
+  padding: 64px 32px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 64px;
+  align-items: center;
 }
 
 .footer-description {
@@ -131,7 +189,7 @@ footer {
 }
 
 .footer-info {
-  width: 720px;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
@@ -139,10 +197,6 @@ footer {
 
 .footer-info h3{
   margin-bottom: 12px;
-}
-
-.footer-address {
-  width: 190px;
 }
 
 .footer-section a {
@@ -155,13 +209,25 @@ footer {
   margin-bottom: 4px;
 }
 
+.social-icon {
+  max-width: 30px;
+  max-height: 30px;
+  margin-right: 8px;
+}
+
+footer {
+  text-align: center;
+}
+
 /* Summer Courses */
 
 .banner {
   filter: brightness(70%);
   width: 100%;
   height: calc(100vw / 3.5);
+  min-height: 500px;
   object-fit: cover;
+
 }
 
 #center-header-div {
@@ -171,6 +237,9 @@ footer {
   left: 0;
   width: 100%;
   height: calc(100vw / 3.5);
+  min-height: 500px;
+  padding-left: 32px;
+  padding-right: 32px;
   justify-content: center;
   align-items: flex-end;
   padding-bottom: 128px;
@@ -178,7 +247,8 @@ footer {
 
 #header-text-div-1 {
   display: flex;
-  width: 1126px;
+  width: 100vw;
+  max-width: 1126px;
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
@@ -193,20 +263,6 @@ footer {
 .page-desc {
   margin-top: 16px;
   color: #fff;
-}
-
-#introduction {
-  width: 1126px;
-  padding: 64px 75px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 32px;
-  border-radius: 24px;
-  background: #fff;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
-  margin-top: 128px;
 }
 
 #intro-desc {
@@ -227,7 +283,7 @@ footer {
   /* width: 1440px; */
   flex-direction: column;
   align-items: center;
-  gap: 128px;
+  gap: 64px;
 }
 
 #course-gallery {
@@ -265,7 +321,6 @@ footer {
 .course-img {
   display: flex;
   height: 300px;
-  /* padding: 0px var(--column-column-lg, 12px); */
   justify-content: center;
   align-items: center;
   gap: 8px;
@@ -317,9 +372,11 @@ footer {
 /* About Us */
 #header-text-div-2 {
   display: flex;
-  width: 1126px;
-  align-items: flex-end;
-  gap: 80px;
+  flex-direction: column;
+  width: 100vw;
+  max-width: 1126px;
+  align-items: flex-start;
+  gap: 32px;
 }
 
 #header-text-div-2 h1 {
@@ -328,35 +385,42 @@ footer {
 }
 
 #header-text-div-2 p {
-  text-align: right;
+  text-align: left;
 }
 
 .about-description-div {
   display: flex;
+  flex-direction: column;
   max-width: 976px;
   align-items: center;
+  /* justify-content: center; */
+  padding-left: 32px;
+  padding-right: 32px;
+  width: 100%;
+  box-sizing: border-box;
   gap: 64px;
 }
 
 .about-description-div img {
-  flex-grow: 1;
-  max-width: 612px;
+  flex: 1 0 0;
+  max-width: 80%;
   height: auto;
+  object-fit: cover;
   border-radius: 24px;
+  box-sizing: border-box;
+  align-self: center;
 }
 
 .about-description {
-  max-width: 300px;
   height: auto;
   display: flex;
   flex-direction: column;
   gap: 32px;
-  flex-shrink: 0;
 }
 
 .outer-achievements-div {
   display: flex;
-  padding: 64px 157px;
+  padding: 64px 64px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -367,7 +431,8 @@ footer {
 
 .inner-achievements-div {
   display: flex;
-  width: 1126px;
+  width: 100%;
+  max-width: 1126px;
   justify-content: space-between;
   align-items: center;
 }
@@ -383,7 +448,7 @@ footer {
 .stat p:nth-child(1) {
   align-self: stretch;
   color: white;
-  font-size: 64px;
+  font-size: 7rem;
   font-style: normal;
   font-weight: 900;
   line-height: 100%;
@@ -393,18 +458,28 @@ footer {
   align-self: stretch;
   color: white;
   text-align: center;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-style: normal;
   font-weight: 400;
   line-height: 100%;
 }
 
-.outer-values-div {
+.primary-section {
   display: flex;
-  width: 976px;
   flex-direction: column;
+  justify-content: center;
   align-items: flex-start;
   gap: 32px;
+  width: calc(100% - 64px);
+  max-width: 1126px;
+  padding: 64px 75px;
+  background-color: #fff;
+  border-radius: 24px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.primary-section.summer-intro {
+  margin-top: 128px;
 }
 
 .inner-values-div {
@@ -412,6 +487,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  gap: 16px;
 }
 
 .value-div {
@@ -427,6 +503,8 @@ footer {
   align-items: flex-start;
   gap: 32px;
   margin-bottom: 128px;
+  max-width: 777px;
+  width: calc(100% - 64px);
 }
 
 .inner-goals-div {
@@ -435,24 +513,27 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 64px;
+  width: 100%;
+
 }
 
 .goal {
   display: flex;
   align-items: center;
   align-self: stretch;
-  width: 976px;
+  width: 100%;
   justify-content: space-between;
+  gap: 32px;
 }
 
 .goal img {
-  max-width: 425px;
+  max-width: 350px;
   height: auto;
   border-radius: 24px;
 }
 
 .goal-description-right, .goal-description-left {
-  max-width: 425px;
+  max-width: 350px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -488,6 +569,7 @@ footer {
 
 .contact-div {
   display: flex;
+  flex-direction: column;
   padding: 64px 75px;
   align-items: flex-start;
   background-color: white;
@@ -562,7 +644,7 @@ input::placeholder, textarea::placeholder {
   gap: 64px;
 }
 
-.contact-links h3{
+.contact-links h3 {
   margin-bottom: 8px;
 }
 
@@ -579,13 +661,101 @@ input::placeholder, textarea::placeholder {
 /* Don't worry about these for now */
 
 @media (min-width: 598px) {
+
 }
 
 @media (min-width: 768px) {
+
 }
 
 @media (min-width: 992px) {
+  html,body {
+    font-size: 62.5%;
+  }
+
+  #header-text-div-2 {
+    flex-direction: row;
+    gap: 80px;
+    align-items: flex-end;
+  }
+
+  #header-text-div-2 p {
+    text-align: right;
+  }
+
+  .centered-section {
+    gap: 128px;
+  }
+
+  /* nav */
+
+  .hamburger-menu {
+    display: none; /* Hide hamburger menu on large screens */
+  }
+
+  .popup-menu {
+    display: none; /* No popup on larger screens */
+  }
+
+  .nav-links {
+    display: flex; /* Show normal nav links */
+  }
+
+  /* about */
+  .about-description-div {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .about-description-div img {
+    max-width: 60%;
+    align-self: stretch;
+  }
+
+  .about-description {
+    max-width: 300px;
+  }
+
+  .outer-goals-div, .inner-goals-div {
+    max-width: 976px;
+  }
+
+  .goal img, .goal-description-left, .goal-description-right {
+    max-width: 425px;
+  }
+
+  /* contact */
+  .contact-div {
+    flex-direction: row;
+  }
+
+  .outer-achievements-div {
+    padding: 64px 32px;
+  }
+
+  /* footer */
+  footer {
+    text-align: start;
+  }
+
+  .footer-content {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .footer-info {
+    max-width: 720px;
+  }
+  
 }
 
 @media (min-width: 1200px) {
+
+    /* footer */
+  footer {
+    padding: 64px 128px;
+  }
 }
+
