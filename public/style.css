@@ -12,11 +12,12 @@ html, body {
 
 h1 {
   color: #fff;
-  font-size: 8rem;
+  font-size: 3.6rem;
   font-style: normal;
   font-weight: 900;
   margin-bottom: 0;
   line-height: 150%;
+  margin-top: 0px;
 }
 
 h2 {
@@ -60,7 +61,7 @@ nav {
 
 nav > div {
   width: 1126px;
-  height: auto;
+  height: 100%;
   padding: 16px 32px;
   display: flex;
   align-items: center;
@@ -157,7 +158,6 @@ nav > div {
 .popup-menu-close {
   position: absolute;
   top: 20px;
-  right:
 }
 
 /* Footer */
@@ -225,7 +225,8 @@ footer {
   filter: brightness(70%);
   width: 100%;
   height: calc(100vw / 3.5);
-  min-height: 500px;
+  min-height: 340px;
+  max-height: 500px;
   object-fit: cover;
 
 }
@@ -237,12 +238,13 @@ footer {
   left: 0;
   width: 100%;
   height: calc(100vw / 3.5);
-  min-height: 500px;
-  padding-left: 32px;
-  padding-right: 32px;
+  min-height: 340px;
+  max-height: 500px;
+  padding-left: 24px;
+  padding-right: 24px;
   justify-content: center;
   align-items: flex-end;
-  padding-bottom: 128px;
+  padding-bottom: 64px;
 }
 
 #header-text-div-1 {
@@ -284,6 +286,7 @@ footer {
   flex-direction: column;
   align-items: center;
   gap: 64px;
+  margin-bottom: 64px;
 }
 
 #course-gallery {
@@ -388,22 +391,26 @@ footer {
   text-align: left;
 }
 
-.about-description-div {
+.photo-section {
   display: flex;
   flex-direction: column;
-  max-width: 976px;
-  align-items: center;
-  /* justify-content: center; */
-  padding-left: 32px;
-  padding-right: 32px;
-  width: 100%;
+  max-width: 1126px;
+  padding-left: 24px;
+  padding-right: 24px;
+  width: calc(100vw - 48px);
   box-sizing: border-box;
   gap: 64px;
+  padding: 64px 75px;
+  background-color: #fff;
+  border-radius: 24px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+
 }
 
-.about-description-div img {
+
+.photo-section img {
   flex: 1 0 0;
-  max-width: 80%;
+  max-width: 90%;
   height: auto;
   object-fit: cover;
   border-radius: 24px;
@@ -412,29 +419,35 @@ footer {
 }
 
 .about-description {
+  width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 16px;
 }
 
 .outer-achievements-div {
   display: flex;
-  padding: 64px 64px;
+  padding: 64px 48px;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  align-content: center;
   gap: var(--column-column-md, 8px);
   align-self: stretch;
   background-color: #CF1D2D;
+  width: 100%;
 }
 
 .inner-achievements-div {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
+  height: auto;
+  gap: 32px;
   max-width: 1126px;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .stat {
@@ -482,79 +495,66 @@ footer {
   margin-top: 128px;
 }
 
-.inner-values-div {
-  width: 100%;
+.outer-div {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  max-width: 976px;
+  padding-left: 24px;
+  padding-right: 24px;
+  width: 100%;
+  box-sizing: border-box;
+  gap: 32px;
+}
+
+.inner-div {
+  display: flex;
+  flex-direction: column;
   align-items: flex-start;
   gap: 16px;
+  align-self: stretch;
+}
+
+
+.value-div, .goal {
+  display: flex;
+  padding: 16px 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 24px;
+  background: #FFF;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .value-div {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  align-items: flex-start;
-}
-
-.outer-goals-div {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 32px;
-  margin-bottom: 128px;
-  max-width: 777px;
-  width: calc(100% - 64px);
-}
-
-.inner-goals-div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 64px;
-  width: 100%;
-
+  margin-top: 8px;
 }
 
 .goal {
-  display: flex;
-  align-items: center;
-  align-self: stretch;
   width: 100%;
-  justify-content: space-between;
-  gap: 32px;
+  padding: 24px 32px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 64px;
 }
 
 .goal img {
-  max-width: 350px;
+  max-width: 100%;
   height: auto;
   border-radius: 24px;
 }
 
-.goal-description-right, .goal-description-left {
-  max-width: 350px;
+.goal-description {
+  /* max-width: 400px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   gap: 16px;
-}
-
-.goal-description-right {
-  align-items: flex-start;
-}
-
-.goal-description-left {
-  align-items: flex-end;
-}
-
-.goal-description-left p {
-  text-align: right;
-}
-
-.goal-description-right p {
-  text-align: left;
+  /* align-items: flex-end; */
 }
 
 /* Contact Page */
@@ -662,11 +662,40 @@ input::placeholder, textarea::placeholder {
 /* Don't worry about these for now */
 
 @media (min-width: 598px) {
+  h1 {
+    font-size: 8rem;
+  }
 
+  #center-header-div {
+    min-height: 500px;
+  }
+
+  .banner {
+    min-height: 500px;
+  }
+
+  .inner-values-div {
+    display: flex;
+    flex-direction: row;  
+    flex-wrap: wrap;  
+    justify-content: flex-start;
+    gap: 16px;
+  }
+
+  .value-div {
+    width: calc(50% - 8px);
+  }
 }
 
 @media (min-width: 768px) {
+  .goal img, .goal-description {
+    max-width: 300px;
+    width: 100%;
+  }
 
+  .centered-section {
+    margin-bottom: 128px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -688,6 +717,10 @@ input::placeholder, textarea::placeholder {
     gap: 128px;
   }
 
+  #center-header-div {
+    padding-bottom: 128px;
+  }
+
   /* nav */
 
   .hamburger-menu {
@@ -703,20 +736,23 @@ input::placeholder, textarea::placeholder {
   }
 
   /* about */
-  .about-description-div {
+  .photo-section {
     flex-direction: row;
     justify-content: space-between;
-    padding-left: 0px;
-    padding-right: 0px;
   }
 
-  .about-description-div img {
+  .photo-section img {
     max-width: 60%;
     align-self: stretch;
   }
 
   .about-description {
     max-width: 300px;
+  }
+
+  .outer-div {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .outer-achievements-div {
@@ -727,8 +763,8 @@ input::placeholder, textarea::placeholder {
     max-width: 976px;
   }
 
-  .goal img, .goal-description-left, .goal-description-right {
-    max-width: 425px;
+  .goal img, .goal-description {
+    max-width: 400px;
   }
 
   /* contact */
