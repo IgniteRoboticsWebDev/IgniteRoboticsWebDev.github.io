@@ -1,7 +1,18 @@
+/* The css for the 3 competetive teams pages, Exothermic, Quantum, and Blaze Qubits */
+
 main {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+button {
+  font-size: 18px;
+  font-family: "roboto", sans-serif;
+}
+
+p {
+  letter-spacing: -0.019em;
 }
 
 .title-background-image {
@@ -15,14 +26,10 @@ main {
   width: 1126px;
 }
 
-.title-container h1 {
-  font-size: 80px;
-  margin: 0;
-}
-
 .title-container h3 {
   margin-top: 25px;
   margin-bottom: 40px;
+  color: white;
 }
 
 .title-container button {
@@ -51,14 +58,9 @@ main {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
-.overview-content h1 {
-  margin: 0;
-}
-
 .overview-content p {
-  margin-bottom: 0;
+  margin-top: 32px;
   line-height: 150%;
-  letter-spacing: -0.019em;
   width: 584px;
 }
 
@@ -73,7 +75,7 @@ main {
   padding: 0px 75px;
 }
 
-.educational-outcomes h1 {
+.educational-outcomes h2 {
   margin-top: 0;
   margin-bottom: 32px;
   line-height: 54px;
@@ -86,8 +88,7 @@ main {
 }
 
 .educational-outcome p {
-  margin-bottom: 0;
-  letter-spacing: -0.019em;
+  margin-top: 16px;
 }
 
 .education-icon-container {
@@ -97,6 +98,7 @@ main {
   border-radius: 7.69px;
   height: 74px;
   box-shadow: 0px 1.28px 2.56px rgba(0, 0, 0, 0.25);
+  margin-bottom: 16px;
 }
 
 .resources {
@@ -104,6 +106,7 @@ main {
   display: flex;
   justify-content: space-between;
   margin-top: 128px;
+  margin-bottom: 128px;
 }
 
 .schedule {
@@ -117,10 +120,6 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.schedule h1 {
-  margin: 0;
 }
 
 .support {
@@ -139,31 +138,12 @@ main {
 }
 
 .season-schedule div p {
-  margin-top: 12px;
+  margin-top: 8px;
   margin-bottom: 0px;
-}
-
-.season-schedule div h3 {
-  margin: 0;
-}
-
-.schedule-bottom-text {
-  margin: 0;
 }
 
 .support {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.support p {
-  margin: 0;
-  line-height: 27px;
-  letter-spacing: -0.019em;
-}
-
-.support h1 {
-  margin: 0;
-  line-height: 48px;
 }

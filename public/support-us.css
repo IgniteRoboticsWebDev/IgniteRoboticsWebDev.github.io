@@ -4,7 +4,7 @@ main {
   flex-direction: column;
 }
 
-.title-content {
+#support-us-title {
   display: flex;
   justify-content: space-between;
   width: 1126px;
@@ -13,30 +13,29 @@ main {
   margin-bottom: 104px;
 }
 
-.support-us-title {
+#support-us-title h1 {
   font-size: 80px;
   width: 636px;
-  line-height: 125%;
-  margin: 0;
+  line-height: 100px;
+  color: black;
 }
 
-.support-us-title-msg {
-  width: 366px;
+#support-us-title p {
+  width: 410px;
   position: absolute;
-  margin: 0;
   right: 0;
   bottom: 0;
   text-align: right;
-  line-height: 125%;
+  line-height: 22.5px;
 }
 
-.northwest-photo {
+#northwest-photo {
   margin-bottom: 104px;
   border-radius: 24px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
-.how-to-get-involved {
+#how-to-get-involved {
   background-color: white;
   width: 1126px;
   border-radius: 24px;
@@ -45,21 +44,18 @@ main {
   margin-bottom: 104px;
 }
 
-.involved-text {
-  margin-top: 0;
+#how-to-get-involved h2 {
   margin-bottom: 32px;
 }
 
-.support-grid {
+#support-grid {
   display: grid;
   grid-template-columns: 300px 300px 300px;
   grid-gap: 64px;
   row-gap: 64px;
 }
 
-.donate-button,
-.volunteer-button,
-.sponsorship-button {
+.support-method button {
   width: 200px;
   height: 36px;
   border: none;
@@ -71,14 +67,11 @@ main {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
-.support-method-text {
-  line-height: 150%;
+.support-method p {
+  margin-top: 16px;
   letter-spacing: -0.019em; /* -1.9% */
-  margin-bottom: 0px;
 }
 
-.page-bottom {
-  height: 300px;
-  width: 100%;
-  background-color: #6B6B6B;
+.support-method h3 {
+  margin-top: 16px;
 }
