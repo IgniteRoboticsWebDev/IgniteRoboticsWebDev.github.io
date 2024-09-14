@@ -48,10 +48,6 @@ p {
   margin: 0;
 }
 
-main p {
-  letter-spacing: -0.019em; /* -1.9% */
-}
-
 /* Nav Bar */
 nav {
   width: 100vw;
@@ -292,6 +288,10 @@ footer {
   align-items: center;
   gap: 64px;
   margin-bottom: 64px;
+}
+
+.centered-seciton p {
+  letter-spacing: -0.019em; /* -1.9% */
 }
 
 #course-gallery {
