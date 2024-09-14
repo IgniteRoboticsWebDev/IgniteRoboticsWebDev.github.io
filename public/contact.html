@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="IgniteRobotics">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="./img/ignite_flame.png">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./style.css">
+        <title>Ignite Robotics</title>
+    </head>
+    <body>
+        <nav>
+            <div>
+                <a href="./index.html">
+                    <img src="./img/ignite_logo.png" alt="Ignite Robotics Logo" class="nav-logo">
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#">Exothermic</a></li>
+                    <li><a href="#">Quantum</a></li>
+                    <li><a href="#">Blaze</a></li>
+                    <li><a href="./summer.html">Summer Classes</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="#" class="login-button">Login</a></li>
+                </ul>
+                <!-- Hamburger Menu -->
+                <div class="hamburger-menu">
+                    <a>
+                        <img src="./img/hamburger-menu.svg" alt="hamburger menu">
+                    </a>
+                </div>
+            </div>
+            <!-- Popup menu -->
+            <div class="popup-menu" id="popup-menu">
+                <ul class="popup-nav-links">
+                    <li><a href="#">Exothermic</a></li>
+                    <li><a href="#">Quantum</a></li>
+                    <li><a href="#">Blaze</a></li>
+                    <li><a href="./summer.html">Summer Classes</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="#" class="login-button">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <div class="centered-section-2">
+                <div class="contact-div">
+                    <div class="contact-form">
+                        <div>
+                            <h2>Contact our team!</h2>
+                            <p>Have any questions about Ignite Robotics? 
+                                <br/>
+                                Send us your question(s) below!
+                            </p>
+                        </div>
+                        <div>
+                            <form action="/submit-form" method="POST" class="contact-form">
+                                <div class="contact-input">
+                                    <label for="name"><h3>Name</h3></label>
+                                    <input type="text" id="name" name="name" required placeholder="Name">   
+                                </div>
+                                <div class="contact-input">
+                                    <label for="email"><h3>Email</h3></label>
+                                    <input type="text" id="email" name="email" required placeholder="Email">   
+                                </div>
+                                <div class="contact-input">
+                                    <label for="message"><h3>Message</h3></label>
+                                    <textarea id="message" name="message" required placeholder="Message" rows="6"></textarea>
+                                </div>
+                                <button type="submit" class="primary-button"><p>Submit</p></button>    
+                            </form>
+                        </div>
+                    </div>
+                    <div class="more-contacts-div">
+                        <h2>More ways to get in touch</h2>
+                        <div class="contact-link-div">
+                            <div class="contact-links">
+                                <h3>Our Number</h3>
+                                <a href="tel:+14256869508" class="phonenumber"><p>+1 (425)686-9508</p></a>
+                            </div>
+                            <div class="contact-links">
+                                <h3>Social Media</h3>
+                                <div class="social-links-div">
+                                    <img src="./img/instagram.svg" alt="Instagram logo" class="social-icon">
+                                    <img src="./img/linkedin.svg" alt="LinkedIn logo" class="social-icon">
+                                    <img src="./img/youtube.svg" alt="Youtube logo" class="social-icon">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-content">
+                <img src="./img/ignite_logo.png" alt="Ignite Robotics Logo" class="footer-logo">
+                <div class="footer-info">
+                    <div>
+                        <h3>Our Address</h3>
+                        <p>1910 132nd Ave NE #7, <br/> Bellevue, WA 98005</p>
+                    </div>
+                    <div>
+                        <h3>Social Media</h3>
+                        <div class="footer-section">
+                            <p><a href="https://www.instagram.com/igniterobotics_/" class="footer-link">Instagram</a></p>
+                            <p><a href="https://www.linkedin.com/company/ignite-robotics" class="footer-link">LinkedIn</a></p>
+                            <p><a href="https://www.youtube.com/@igniterobotics" class="footer-link">Youtube</a></p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="footer-section">
+                            <p><a href="#">Home</a></p>
+                            <p><a href="#">Exothermic</a></p>
+                            <p><a href="#">Quantum</a></p>
+                            <p><a href="#">Blaze Qubits</a></p>
+                            <p><a href="#">Summer Courses</a></p>
+                            <p><a href="#">Support Us</a></p>
+                            <p><a href="#">About Us</a></p>
+                            <p><a href="#">Contact</a></p>
+                            <p><a href="#">Login</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>A 501(c)(3) nonprofit.</p>
+        </footer>
+    </body>
+</html>
