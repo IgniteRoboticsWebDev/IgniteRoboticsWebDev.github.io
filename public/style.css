@@ -82,6 +82,101 @@ nav {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
+/* Program Box Container */
+.programs-container {
+  width: 80%;
+  max-width: 1440px;
+  background-color: white;
+  border-radius: 24px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  margin: 40px auto; /* Centers the box */
+  text-align: center;
+}
+
+/* Title for the Programs Section */
+.programs-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 36pt;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 40px;
+}
+
+/* Program Cards Layout */
+.program-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 32px;
+  padding: 16px 0;
+}
+
+.program-card {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content:flex-end;
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  flex: 1; /* Ensures the program cards are of equal width */
+  position: relative; /* mades position relative*/
+}
+/* Adjust Exothermic logo */
+.program-card img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.program-card:first-child img { /* Targeting the first image (Exothermic) */
+  position: relative;
+  top: -20px; /* Moves the image 20px up */
+
+}
+
+
+/* Learn More Button Styles */
+.learn-more-btn {
+  background-color: #CF1D2D;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.learn-more-btn:hover {
+  background-color: #A8151F;
+}
+
+/* Adjusting Text Styles */
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 18pt;
+  color: black;
+  margin-top: 20px;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18pt;
+  color: #6B6B6B;
+  margin-bottom: 20px;
+}
+
+/* Responsiveness */
+@media (max-width: 992px) {
+  .program-container {
+    flex-direction: column;
+  }
+}
+
 /* Landing Page */
 .landing-photo {
   width: 100%;
