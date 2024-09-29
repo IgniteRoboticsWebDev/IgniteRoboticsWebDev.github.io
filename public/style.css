@@ -748,6 +748,8 @@ textarea::placeholder {
   margin-top: 25px;
   margin-bottom: 40px;
   color: white;
+  font-weight: 400;
+  letter-spacing: -0.011em;
 }
 
 .title-container button {
@@ -806,6 +808,7 @@ textarea::placeholder {
 
 .educational-outcome p {
   margin-top: 16px;
+  letter-spacing: -0.019em;
 }
 
 .education-icon-container {
@@ -859,6 +862,23 @@ textarea::placeholder {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+#responsibilities {
+  background-color: white;
+  padding: 64px 75px;
+  border-radius: 24px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  width: 1126px;
+}
+
+#responsibilities h2 {
+  padding-bottom: 32px;
+}
+
+#responsibilities p {
+  height: 112px;
+  letter-spacing: -0.019em;
 }
 
 /* Media Queries - these are responsible for page responsiveness */
