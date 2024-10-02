@@ -111,7 +111,7 @@ nav > div {
   filter: brightness(90%);
 }
 
-.nav-links li:last-child {
+.nav-links li:last-child, .nav-links li:nth-child(4) {
   display: none;
 }
 
@@ -688,7 +688,6 @@ textarea::placeholder {
 
 #northwest-photo {
   border-radius: 24px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
   width: calc(100% - 64px);
   max-width: 1126px;
 }
@@ -701,6 +700,10 @@ textarea::placeholder {
 
 .support-method {
   width: 100%;
+  min-height: 411px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .support-method p {
@@ -709,6 +712,11 @@ textarea::placeholder {
 
 .support-method h3 {
   margin-top: 16px;
+}
+
+.support-method-icon {
+  width: 50px;
+  height: 50px;
 }
 
 /* Competetive Teams Pages */
