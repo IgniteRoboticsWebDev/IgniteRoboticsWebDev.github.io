@@ -227,7 +227,7 @@ footer {
   text-align: center;
 }
 
-.footer-section p:last-child, .footer-section p:nth-child(5) {
+.footer-section.footer-links p:last-child, .footer-section.footer-links p:nth-child(5) {
   display: none;
 }
 
