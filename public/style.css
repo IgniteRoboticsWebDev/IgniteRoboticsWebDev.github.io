@@ -240,9 +240,6 @@ footer {
   min-height: 340px;
   max-height: 500px;
   object-fit: cover;
-  /* z-index: 1;
-  align-self: stretch;
-  background: lightgray -0.396px -378.58px / 100% 215.898% no-repeat; */
 }
 
 #center-header-div {
@@ -259,6 +256,10 @@ footer {
   justify-content: center;
   align-items: flex-end;
   padding-bottom: 64px;
+}
+
+#center-header-div.landing-page {
+  padding-bottom: 16px;
 }
 
 #header-text-div-1 {
@@ -892,8 +893,6 @@ button {
   letter-spacing: -0.019em;
 }
 
-/* Media Queries - these are responsible for page responsiveness */
-/* Don't worry about these for now */
 
 @media (min-width: 598px) {
   h1 {
@@ -984,6 +983,10 @@ button {
 
   #center-header-div {
     padding-bottom: 128px;
+  }
+
+  #center-header-div.landing-page {
+    margin-top: 64px;
   }
 
   /* nav */
